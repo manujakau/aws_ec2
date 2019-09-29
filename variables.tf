@@ -8,14 +8,14 @@ variable "instanceType" {
   default = "t2.micro"
 }
 variable "keyName" {
-  default = "wp-key"
+  default = "yourkey"
 }
 variable "subnet" {
-  default = "subnet-18fb2763"
+  default = "subnet-yoursubnet"
 }
 variable "securityGroups" {
   type    = "list"
-  default = ["sg-094525ffd8583a9f8"]
+  default = ["sg-yoursg"]
 }
 variable "instanceName" {
   default = "Test_Instance"
@@ -23,7 +23,7 @@ variable "instanceName" {
 # ami-c58c1dd3 is the free Amazon Linux AMI
 variable "amis" {
   default = {
-    "us-east-2" = "ami-0c72fedba2036966b"
+    "us-east-2" = "ami-yourami"
   }
 }
 variable "volumeType" {
