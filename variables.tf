@@ -20,7 +20,6 @@ variable "securityGroups" {
 variable "instanceName" {
   default = "Test_Instance"
 }
-# ami-c58c1dd3 is the free Amazon Linux AMI
 variable "amis" {
   default = {
     "us-east-2" = "ami-yourami"
